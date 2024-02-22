@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONFESS</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1abc9c;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            color: #e74c3c;
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: moveText 2s ease infinite alternate;
+        }
+
+        #heartEmoji {
+            color: #e74c3c;
+            font-size: 2em;
+            margin-left: 5px;
+            animation: moveHeart 2s ease infinite alternate;
+        }
+
+        @keyframes moveText {
+            from {
+                transform: translateX(-20px);
+            }
+
+            to {
+                transform: translateX(20px);
+            }
+        }
+
+        @keyframes moveHeart {
+            from {
+                transform: translateY(-10px);
+            }
+
+            to {
+                transform: translateY(10px);
+            }
+        }
+
+        #confessionContainer {
+            max-width: 600px;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+        }
+
+        #confessionMessage {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        #signature {
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #34495e;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="confessionContainer">
+        <h1>Confession<span id="heartEmoji">❤️</span></h1>
+        <p id="confessionMessage">
+            In the quiet moments of the day, my thoughts always find their way to you. Your presence is like a gentle whisper in the wind, and your smile is the warmth that brightens my darkest days. There's something I need to confess—I can't help but feel a special connection with you that goes beyond words.
+        </p>
+        <p id="signature">With admiration,<br>[THIS IS EARLCIST]</p>
+    </div>
+
+</body>
+</html>
